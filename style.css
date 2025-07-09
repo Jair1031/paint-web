@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+    padding: 10px;
+    gap: 10px;
+    width: 100px;
+    align-items: center;
+  }
+  
+  button, .color {
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s;
+    border: none;
+    outline: none;
+  }
+  
+  button:hover, .color:hover {
+    transform: scale(1.1);
+  }
+  
+  .color {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+  }
+  
+  .color.selected {
+    border: 2px solid #000;
+  }
+  
+  button.active {
+    background: #d0d0d0;
+  }
+  
+  canvas {
+    border: 2px solid #000;
+    background: #fff;
+    cursor: crosshair;
+  }
+  
